@@ -1,5 +1,6 @@
-FROM node:alpine as builder 
 
+#setup project to build node application
+FROM node:alpine as builder 
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
