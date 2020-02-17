@@ -7,7 +7,7 @@ before_install:
 
 script:
   #- docker run -e CI=true zencid/docker-react npm run test
-  - docker run zencid/docker-react npm run test -- --coverage
+  - docker run -e CI=true zencid/docker-react npm run test -- --coverage
 
 deploy: 
   provider: elasticbeanstalk
